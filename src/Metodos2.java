@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.Map;
 import java.util.HashMap;
 
 public class Metodos2 {
@@ -20,8 +21,13 @@ public class Metodos2 {
 		h.put("c" , 30);
 		
 		System.out.println("\nEl Contenido del HashMap: " + h);
-
-		
+        
+		for(Map.Entry<String, Integer> entry : h.entrySet()) {
+			String key = entry.getKey();
+			Object value = entry.getValue();
+			System.out.println("\nEl Contenido del HashMap en ubicacion: " + key + " " + value);
+		}
+		 
 	}
 	
 	

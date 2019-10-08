@@ -11,12 +11,16 @@ public class Metodos1 {
 	//Metodos
 	//Metodo 1 - Return type: String - Body: Comparison between 2 words - Parameters : 2 strings.
 	public String Comparison (String word1, String word2) {
-		if (word1.contentEquals(word2)) 
-			compa = "Son Iguales";
-		else 
-			compa = "No son Iguales";
-		return compa;
-			
+		if(word1!=null&&word2!=null) {
+			if (word1.equalsIgnoreCase(word2)) 
+				compa = "Son Iguales";
+			else 
+				compa = "No son Iguales";
+		}
+		else {
+			return "Error al introducir las cadenas";
+		}
+	return compa;
 	}
 	
 	//Metodo 2 - Return type: Bool - Body: Verify the biggest number in a list - Parameters: List/Array of integers. 

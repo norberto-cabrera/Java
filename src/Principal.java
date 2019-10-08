@@ -52,13 +52,13 @@ public class Principal {
 		System.out.println("Introduce la segunda palabra: ");
 		word2 = teclado.nextLine();
 		
-		
-		
 		//Llamada al metodo 1
 		compa = comp.Comparison(word1, word2);
 		System.out.println("\nLas palabras: " + compa);
 
+		
 	    //Metodo 2
+		try {
 		do {
 			System.out.println("\n\n\t Escribe 0 para salir");
 			System.out.println("\nIntroduce un numero: ");
@@ -72,6 +72,10 @@ public class Principal {
 		
 		//Llamada al metodo 2
 		biggest.Biggest(Numbers);
+		}
+		catch(Exception d){
+			System.out.print("Ha ocurrido un error");
+		}
 		
 		//Metodo 3
 		do {
@@ -102,10 +106,12 @@ public class Principal {
 		//Metodos2 - Metodo 1
 		i = 0;
 		Number = 0;
+		try {
 		do {
 			System.out.println("\n\n\t Escribe 0 para salir");
 			System.out.println("\nIntroduce un numero: ");
 			Number = teclado.nextInt();
+		
 			if (Number == 0)
 				break;
 			Numbers2.add(Number);
@@ -115,7 +121,10 @@ public class Principal {
 		
 		//Llamada al metodo 1
 		smallest.Smallest(Numbers2);
-	
+		}
+		catch(Exception e){
+			System.out.print("\nHa ocurrido un error");
+		}
 		
 		//Metodos2 - Metodo 2
 		//Llamada al metodo 2

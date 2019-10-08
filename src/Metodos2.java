@@ -19,7 +19,7 @@ public class Metodos2 {
 		h.put("b" , 20);
 		h.put("c" , 30);
 		
-		System.out.println("El Contenido del HashMap: " + h);
+		System.out.println("\nEl Contenido del HashMap: " + h);
 
 		
 	}
